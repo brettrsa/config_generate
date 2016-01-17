@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>config_generate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=css/bootstrap-combined.no-icons.min.css>
+    <link rel="stylesheet" href=css/font-awesome.css>
+    <script src=js/jquery.js></script>
+    <script src=js/bootstrap.js></script>
+
+    <style type="text/css">
+      /* Large desktop */
+      @media (min-width: 980px) {
+        body {
+         padding-top: 60px;
+        }
+       .linediv-l {
+         border-right: 1px white solid;
+        }
+       .linediv-r {
+         border-left: 1px white solid;
+       }
+      }
+      /* All form factors */
+      /* Main body and headings */
+      body{
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
+      }
+      input[type="text"] {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        width: 50%;
+        font-family: sans-serif;
+        font-size: 18px;
+        appearance: none;
+        box-shadow: none;
+        border-radius: none;
+      }
+      input[type="text"]:focus {
+        outline: none;
+      }
+      div.wrapper {
+        position:  absolute;
+        top : 200px;
+        left: 300px;
+        width: 300px;
+        height:300px;
+        border:1px solid black;
+      }
+      .btn_build_reset {
+        margin: 0 auto;
+        padding: 10px 40px;
+        border-radius: 10px;
+        font-family: 'Helvetica';
+        font-size: 20px;
+        color: #FFF;
+        background-color: #3498DB;
+        border-bottom: 5px solid #2980B9;
+        text-shadow: 0px -2px #2980B9;
+      }
+      .btn_build_reset:hover,
+      .btn_build_reset:focus {
+        text-decoration: none;
+        color: #fff;
+      }
+      .btn_build_reset:active {
+        transform: translate(0px,5px);
+        -webkit-transform: translate(0px,5px);
+        border-bottom: 1px solid;
+      }
+    </style>
+
+
+  </head>
+  <body>
+
+    <!-- Mobile-friendly navbar adapted from example. -->
+    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row-fluid heading">
+        <div class="span12">
+          <h2>config generate - under development</h2>
+
+        <section>
+            <div class="input-list style-1 clearfix">
+              <form name="form" method="post" action="action.php">
+
+                <input type="text" placeholder="hostname" name="hostname">
+                <input type="text" placeholder="192.168.10.253 255.255.255.0" name="ip_subnet">
+                <input type="text" placeholder="l2tp username" name="l2tp_username">
+                <input type="text" placeholder="l2tp password" name="l2tp_password">
+                <input type="text" placeholder="adsl username" name="adsl_username">
+                <input type="text" placeholder="adsl password" name="adsl_password">
+
+                <center>
+                  <input class="btn_build_reset" type="submit" value="build">
+                  <input class="btn_build_reset" type="reset" value="reset" >
+                </center>
+
+              </form>
+            </div>
+        </section>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>
